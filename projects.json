@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "OpenChatAI",
+            "description": "Simple bot for talking. Based on DialogFlow AI (Google)",
+            "link": "",
+            "img": "../img/OpenChatAI.png"
+        },
+        {
+            "title": "Gendo Ikari",
+            "description": "Bot for fun. Clubs, economy, levels, profiles, leaderboard.",
+            "link": "",
+            "img": "../img/Gendich.png"
+        },
+        {
+            "title": "Jyldam-Oqyty",
+            "description": "Образовательный сайт. С платной подпиской, курсами и т.п.",
+            "link": "#soon",
+            "img": "../img/jyldam-oqyty.svg"
+        },
+        {
+            "title": "hex-color",
+            "description": "Random hex-color gradient generator",
+            "link": "",
+            "img": "../img/hex.png"
+        }
+    ]
+}

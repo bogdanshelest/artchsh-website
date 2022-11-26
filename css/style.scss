@@ -1,0 +1,134 @@
+@import 'resets','fonts','main','switch';
+
+:root {
+  --background-color: white;
+  --primary-color: black;
+  --text-in-box: white;
+  --text-color: black;
+  --card-width: 300px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  transition: 0.3s ease-in;
+}
+
+a,
+p,
+h1,h2,h3,h4,h5,h6 {
+  width: fit-content;
+  color: var(--text-color);
+  transition: 0.3s ease-in;
+}
+
+main {
+  border: 3px solid var(--primary-color);
+  padding: 1rem;
+  box-shadow: 1px -1px 0 var(--primary-color), 
+              2px -2px 0 var(--primary-color), 
+              3px -3px 0 var(--primary-color), 
+              4px -4px 0 var(--primary-color),
+              5px -5px 0 var(--primary-color),
+              6px -6px 0 var(--primary-color), 
+              7px -7px 0 var(--primary-color), 
+              8px -8px 0 var(--primary-color), 
+              9px -9px 0 var(--primary-color),
+              10px -10px 0 var(--primary-color);
+}
+
+.block_links {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0.2rem !important;
+  }
+}
+
+.oneLink {
+  padding: 16px 12px;
+  border: 3px solid var(--primary-color);
+  margin: 1rem;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color);
+
+    p {
+      color: var(--text-in-box);
+    }
+
+    a {
+      color: var(--text-in-box);
+    }
+  }
+}
+
+/* CARDS */
+
+.card__row {
+  border: none;
+  display: flex;
+  width: 100%;
+  height: max-content;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  flex-shrink: 0;
+  border: 3px solid var(--primary-color);
+  width: fit-content;
+  margin: 0.5rem;
+  position: relative;
+
+  img {
+    width: var(--card-width);
+    margin: 1rem;
+    border-radius: 20rem;
+    border: 3px solid var(--primary-color);
+  }
+
+  &__title {
+    margin: 1rem;
+    width: var(--card-width);
+  }
+
+  &__content {
+    margin: 1rem;
+    margin-bottom: 7rem;
+    width: var(--card-width);
+  }
+
+  &__button {
+    border: 3px solid var(--primary-color);
+    margin: 0rem 1.2rem 0rem 1.2rem;
+    background: none;
+    color: var(--text-color);
+    padding: 16px 12px;
+    width: var(--card-width);
+    transition: .3s ease-in;
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  &__button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-in-box);
+  }
+}
+
+.rainbow-pixel-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
